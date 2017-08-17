@@ -54,4 +54,6 @@ if [ -n "$BUILD_THUMBPRINT" ] ; then
   echo "ro.build.thumbprint=$BUILD_THUMBPRINT"
 fi
 
+echo "ro.miku.device=$MIKU_DEVICE"
+
 echo "# end build properties"
