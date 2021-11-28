@@ -1174,4 +1174,7 @@ DEFAULT_DATA_OUT_MODULES := ltp $(ltp_packages) $(kselftest_modules)
 # Make RECORD_ALL_DEPS readonly.
 RECORD_ALL_DEPS :=$= $(filter true,$(RECORD_ALL_DEPS))
 
+# Include Miku config
+include vendor/miku/build/core/config.mk
+
 include $(BUILD_SYSTEM)/dumpvar.mk
