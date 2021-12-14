@@ -218,7 +218,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   builddate = target_info.GetBuildProp("ro.build.date")
   pmodel = target_info.GetBuildProp("ro.product.model")
   manufacturer = target_info.GetBuildProp("ro.product.manufacturer")
-  builder = target_info.GetBuildProp("ro.build.user")
+  builder = target_info.GetBuildProp("ro.miku.maintainer")
 
   script.Print("               ..,:cc::c,")
   script.Print("              ;xO000K0000l.")
