@@ -23,9 +23,6 @@ import subprocess
 import sys
 import re
 
-reload(sys)
-sys.setdefaultencoding('utf8')
-
 CONFIG_PREFIX = b'IKCFG_ST'
 GZIP_HEADER = b'\037\213\010'
 COMPRESSION_ALGO = (
