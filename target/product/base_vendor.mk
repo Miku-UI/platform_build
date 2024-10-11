@@ -17,6 +17,7 @@
 # Base modules and settings for recovery.
 PRODUCT_PACKAGES += \
     adbd.recovery \
+    build_flag_vendor \
     cgroups.recovery.json \
     charger.recovery \
     init_second_stage.recovery \
