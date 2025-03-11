@@ -384,7 +384,6 @@ function addcompletions()
       packages/modules/adb/adb.bash
       system/core/fastboot/fastboot.bash
       tools/asuite/asuite.sh
-      prebuilts/bazel/common/bazel-complete.bash
     )
     # Completion can be disabled selectively to allow users to use non-standard completion.
     # e.g.
@@ -464,6 +463,7 @@ function print_lunch_menu()
 function lunch()
 {
     local answer
+    setup_cog_env_if_needed
 
     if [[ $# -gt 1 ]]; then
         echo "usage: lunch [target]" >&2
@@ -1125,10 +1125,7 @@ function source_vendorsetup() {
         done
     done
 
-    if [[ "${PWD}" == /google/cog/* ]]; then
-        f="build/make/cogsetup.sh"
-        echo "including $f"; . "$T/$f"
-    fi
+    setup_cog_env_if_needed
 }
 
 function showcommands() {
