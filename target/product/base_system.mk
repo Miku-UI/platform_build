@@ -376,10 +376,10 @@ ifneq ($(RELEASE_MOVE_VCN_TO_MAINLINE),true)
         framework-connectivity-b
 endif
 
-ifneq (,$(RELEASE_RANGING_STACK))
-    PRODUCT_PACKAGES += \
-        com.android.ranging
-endif
+#ifneq (,$(RELEASE_RANGING_STACK))
+#    PRODUCT_PACKAGES += \
+#        com.android.ranging
+#endif
 
 ifeq ($(RELEASE_MEMORY_MANAGEMENT_DAEMON),true)
   PRODUCT_PACKAGES += \
