@@ -47,8 +47,7 @@ PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 # GSI specific tasks on boot
 PRODUCT_PACKAGES += \
     gsi_skip_mount.cfg \
-    init.gsi.rc \
-    init.vndk-nodef.rc \
+    init.gsi.rc
 
 
 # Overlay the GSI specific setting for framework and SystemUI
