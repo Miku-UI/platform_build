@@ -80,6 +80,7 @@ define generate-common-build-props
     # go/arc-android-sigprop-changes have been achieved.
     echo "ro.$(1).build.fingerprint?=$(BUILD_FINGERPRINT_FROM_FILE)" >> $(2);\
     echo "ro.$(1).build.id?=$(BUILD_ID)" >> $(2);\
+    echo "ro.$(1).build.uuid?=$(BUILD_UUID_FROM_FILE)" >> $(2);\
     echo "ro.$(1).build.tags?=$(BUILD_VERSION_TAGS)" >> $(2);\
     echo "ro.$(1).build.type=$(TARGET_BUILD_VARIANT)" >> $(2);\
     echo "ro.$(1).build.version.incremental=$(BUILD_NUMBER_FROM_FILE)" >> $(2);\
